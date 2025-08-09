@@ -27,8 +27,8 @@ export function HeroSection() {
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mb-8 animate-fade-in-up delay-200">
           <TypewriterEffect
             text="I'm a Full stack developer with Javascript, Typescript, Next. JS, React js, Node js, Python with Django and Flask, MongoDB and SQL."
-            speed={1} // Significantly increased writing speed (1ms per character)
-            delay={500}
+            speed={1} // Already very fast (1ms per character)
+            delay={0} // Removed initial delay for immediate start
           />
         </p>
         <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-400">
