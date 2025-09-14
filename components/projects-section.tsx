@@ -17,10 +17,11 @@ export function ProjectsSection() {
       liveLink: "https://glow-vibe-olatayo.vercel.app/",
     },
     {
-      title: "Real-time Chat App",
-      description: "A real-time chat application with user authentication, private messaging, and group chats.",
+      title: "Education Website",
+      description:
+        "An educational platform featuring course listings, student resources, and interactive learning materials.",
       image: "/chat-application-interface.png",
-      techStack: ["React", "Socket.io", "Node.js", "PostgreSQL"],
+      techStack: ["React", "JavaScript", "CSS3", "HTML5"],
       githubLink: "https://github.com/Olatayo-ife",
       liveLink: "https://superb-youtiao-5f8d0b.netlify.app",
     },
