@@ -19,11 +19,12 @@ export function ProjectsSection() {
     {
       title: "Education Website",
       description:
-        "An educational platform featuring course listings, student resources, and interactive learning materials.",
+        "Educational platforms featuring course listings, student resources, and interactive learning materials. Built with modern web technologies for optimal user experience.",
       image: "/chat-application-interface.png",
-      techStack: ["React", "JavaScript", "CSS3", "HTML5"],
+      techStack: ["React", "JavaScript", "CSS3", "HTML5", "Next.js"],
       githubLink: "https://github.com/Olatayo-ife",
       liveLink: "https://superb-youtiao-5f8d0b.netlify.app",
+      secondLiveLink: "https://olatayo-university-website.vercel.app",
     },
     {
       title: "Task Management API",
@@ -73,7 +74,7 @@ export function ProjectsSection() {
                 ))}
               </div>
             </CardContent>
-            <CardFooter className="flex justify-end gap-4 p-6 pt-0">
+            <CardFooter className="flex justify-end gap-2 p-6 pt-0 flex-wrap">
               {project.liveLink && (
                 <Button
                   variant="default"
@@ -82,7 +83,19 @@ export function ProjectsSection() {
                   className="bg-emerald-500 hover:bg-emerald-600 text-gray-950"
                 >
                   <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                    Live Demo
+                    Demo 1
+                  </Link>
+                </Button>
+              )}
+              {project.secondLiveLink && (
+                <Button
+                  variant="default"
+                  size="sm"
+                  asChild
+                  className="bg-emerald-500 hover:bg-emerald-600 text-gray-950"
+                >
+                  <Link href={project.secondLiveLink} target="_blank" rel="noopener noreferrer">
+                    Demo 2
                   </Link>
                 </Button>
               )}
