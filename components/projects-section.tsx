@@ -14,6 +14,7 @@ export function ProjectsSection() {
       image: "/e-commerce-dashboard.png",
       techStack: ["Next.js", "Node.js", "Express", "MongoDB", "Stripe"],
       githubLink: "https://github.com/Olatayo-ife",
+      liveLink: "https://glow-vibe-olatayo.vercel.app/",
     },
     {
       title: "Real-time Chat App",
@@ -21,6 +22,7 @@ export function ProjectsSection() {
       image: "/chat-application-interface.png",
       techStack: ["React", "Socket.io", "Node.js", "PostgreSQL"],
       githubLink: "https://github.com/Olatayo-ife",
+      liveLink: "https://superb-youtiao-5f8d0b.netlify.app",
     },
     {
       title: "Task Management API",
@@ -29,6 +31,7 @@ export function ProjectsSection() {
       image: "/api-development.png",
       techStack: ["Python", "Django REST Framework", "PostgreSQL", "Docker"],
       githubLink: "https://github.com/Olatayo-ife",
+      liveLink: "https://materiallab-modern-m-w7fd.bolt.host",
     },
     {
       title: "Portfolio Website",
@@ -36,6 +39,7 @@ export function ProjectsSection() {
       image: "/portfolio-website-showcase.png",
       techStack: ["Next.js", "Tailwind CSS", "shadcn/ui"],
       githubLink: "https://github.com/Olatayo-ife",
+      liveLink: "https://olatayo-portifolio.vercel.app/",
     },
   ]
 
@@ -69,6 +73,18 @@ export function ProjectsSection() {
               </div>
             </CardContent>
             <CardFooter className="flex justify-end gap-4 p-6 pt-0">
+              {project.liveLink && (
+                <Button
+                  variant="default"
+                  size="sm"
+                  asChild
+                  className="bg-emerald-500 hover:bg-emerald-600 text-gray-950"
+                >
+                  <Link href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                    Live Demo
+                  </Link>
+                </Button>
+              )}
               {project.githubLink && (
                 <Button
                   variant="outline"
