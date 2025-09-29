@@ -14,7 +14,7 @@ export function HeroSection() {
       <div className="relative z-10 flex flex-col items-center">
         <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-gray-700 shadow-lg mb-6 animate-fade-in">
           <Image
-            src="/hezekiah-olatayo-avatar.png"
+            src="/hezekiah-professional-photo.jpg"
             alt="Hezekiah Olatayo"
             layout="fill"
             objectFit="cover"
